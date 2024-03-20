@@ -4,212 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SGF: Registro de nueva variedad</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Registro Mascota</title>
     <script src="js/bootstrap.bundle.min.js"></script>
 </head>
-<body>    
-    
-    <!--Menú de opciones -->
+<body>
+    <!---->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <i class="bi bi-flower1"></i>
-            <a class="navbar-brand" href="index.html">PERROS Y GATOS</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">                            
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Mascota
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./mascota-form.html">Agregar</a></li>                  
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="./mascota-list.html">Lista</a></li>
-                  </ul>
-                </li>              
-              </ul>
-            
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">                            
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Alimento
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./alimento-form.html">Agregar</a></li>                  
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="./alimento-list.html">Lista</a></li>
-                  </ul>
-                </li>              
-              </ul>
 
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">                            
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Accesorio
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./accesorio-form.html">Agregar</a></li>                  
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="./accesorio-list.html">Lista</a></li>
-                  </ul>
-                </li>              
-              </ul>
-
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">                            
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Usuario
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./usuario-form.html">Agregar</a></li>                  
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="./usuario-list.html">Lista</a></li>
-                  </ul>
-                </li>              
-              </ul>
-
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">                            
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Pago
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./pago-form.html">Agregar</a></li>                  
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="./pago-list.html">Lista</a></li>
-                  </ul>
-                </li>              
-              </ul>
-
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-
-              
-            </div>
-          </div>
-      </nav>
-  </header>
-    <!-- Fin de menú de opciones -->
+    </header>
+    <!---->
     <main class="container">
-      <div class="py-5 text-center">        
-        <h2>Nueva Mascota</h2>
-        <p class="lead">Registro de compra de una mascota.</p>
-      </div>
-  
-      <div class="row g-5">
-        <div class="col-md-5 col-lg-4 order-md-last">
-          <img width="90%" srcset="https://www.mimascotaespecial.com/wp-content/uploads/2019/03/cropped-logo-mimascotaespecial-1.jpg" alt="naturaleza, planta, flor, pétalo, Rosa, verde, rojo, jardín, flora, invernadero, Rosa roja, de cerca, Pétalos, Rosa, belleza, flor rosa, Fotografía macro, planta floreciendo, Rosas de jardín, Familia rosa, Tallo de la planta, Planta de tierra, Fotos gratis In PxHere">
-        </div>
-        <div class="col-md-7 col-lg-8">
-          <h4 class="mb-3">Registro de mascota</h4>
-          <hr class="my-4">
-          <form id="frmMascota" method="POST">
-            <div class="row g-3">
-              <div class="col-12">
-                <label for="txtRaza" class="form-label">Raza</label>
-                <input type="text" class="form-control" id="txtRaza" placeholder="Ingrese un nombre" required>
-                <div class="invalid-feedback">
-                  Debe ingresar un nombre para la raza.
-                </div>
-              </div>
 
-              <div class="col-sm-6">
-                <label for="txtTipo" class="form-label">Tipo</label>
-                <input type="text" class="form-control" id="txtTipo" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Debe ingresar el tipo de la mascota.
-                </div>
-              </div>
-  
-              <div class="col-sm-6">
-                <label for="txtColor" class="form-label">Color </label>
-                <input type="text" class="form-control" id="txtColor" placeholder="" value=""> 
-                <div class="invalid-feedback">
-                  Debe ingresar el color de la mascota               
-              </div>
-              
-              <div class="col-sm-6">
-                <label for="txtEdad" class="form-label">Edad </label>
-                <input type="text" class="form-control" id="txtEdad" placeholder="" value=""> 
-                <div class="invalid-feedback">
-                  Debe ingresar el color de la mascota               
-              </div>
-
-              <div class="col-sm-6">
-                <label for="txtCaracteristica" class="form-label">Caracteristica </label>
-                <input type="text" class="form-control" id="txtCaracteristica" placeholder="" value=""> 
-                <div class="invalid-feedback">
-                  Debe ingresar la caracteristica de la mascota             
-              </div>
-          </form>
-        </div>
-      </div>
-      <h5 class="mb-3">Datos de venta</h5>   
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mdVenta">Agregar</button>           
-            </div>          
-            <hr class="my-4">       
-            <button id="btnGuardar" type="button" class="w-100 btn btn-success btn-lg">Guardar</button>
-          </form>
-        </div>
-      </div>
-      <!---    -->
-
-      <form id="frmVenta" class="needs-validation" novalidate  method="GET">
-        <input type="hidden" id="txtIdVenta">
-        <div class="modal fade" id="mdVenta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="lblDescripcion">Datos de venta</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              
-                <div class="col-sm-12">
-                  <label for="txtDescripcion" class="form-label">Descripcion</label>
-                  <input type="text" class="form-control" id="txtDescripcion" placeholder="" value="" required>                
-                      <div class="invalid-feedback">
-                        Debe ingresar la cedula del Propietario de la Mascota.
-                      </div>
-                </div>
-
-                <div class="col-sm-12">
-                  <label for="txtNombre" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="txtNombre" placeholder="" value="" required>                
-                      <div class="invalid-feedback">
-                        Debe ingresar la cedula del Propietario de la Mascota.
-                      </div>
-                </div>
-
-
-                <div class="col-sm-12">
-                  <label for="txtPrecio" class="form-label">Precio</label>
-                  <input type="text" class="form-control" id="txtPrecio" placeholder="" value="" required>                
-                      <div class="invalid-feedback">
-                        Debe ingresar el # de telefono del Propietario de la Mascota.
-                      </div>
-                </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button id="btnAgregar" type="button" class="btn btn-success" data-bs-dismiss="modal">Agregar</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              </div>
+        <div class="py-5 text-center">        
+            <h2>Nueva Compra</h2>
+            <p class="lead">Registro de nueva compra.</p>
+            
+            <ul></ul>
+            <div class="input-group mb-3">
+              <input id="txtBuscar" type="text" class="form-control" placeholder="Buscar por nombre o id" aria-label="Buscar por nombre o id" aria-describedby="button-addon2">
+              <button id="btnBuscar" class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
             </div>
           </div>
-      </div>
-      </form>       
+      
+          <div class="row g-5">
+
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <img width="95%" src="img/logo.jpg"  alt="Check-in">
+            </div>
+            <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3">Registro de compra</h4>
+              <hr class="my-4">
+              <form method="GET" action="mascota-list.html"  id="frmMascota" class="needs-validation" novalidate>
+                <input type="hidden" id="txtIdMascota">
+                <div class="row g-3">
+
+                  <div class="col-sm-6">
+                    <label for="txtRaza" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="txtRaza" required>
+                    <div class="invalid-feedback">
+                      Ingrese la raza.
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="txtTipo" class="form-label">Tipo</label>
+                    <input type="text" class="form-control" id="txtTipo"  required>
+                    <div class="invalid-feedback">
+                      Ingrese el tipo de mascota .
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="txtColor" class="form-label">Color</label>
+                    <input type="text" class="form-control" id="txtColor"  required>
+                    <div class="invalid-feedback">
+                      ingrese color mascota.
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <label for="txtEdad" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="txtEdad" min="0" max="30" placeholder="" value="" required>                
+                    <div class="invalid-feedback">
+                      Debe ingresar una Edad para la mascota.
+                    </div>
+                </div>
+      
+                <div class="col-sm-6">
+                    <label for="txtGenero" class="form-label">Genero</label>
+                    <select class="form-select" name="txtGenero" id="txtGenero" aria-label="Default select example">
+                        <option value="0" selected>--SELECCIONE--</option>
+                        <option value="Macho">Casual</option>
+                        <option value="Hembra">Deportivo</option>
+                    </select>                
+                    <div class="invalid-feedback">
+                      Debe ingresar un Genero para la mascota.
+                    </div>
+                </div>
+      
+                  <div class="col-sm-6" >
+                    <label for="txtPrecio" class="form-label">Precio </label>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                      </div>
+                      <input id="txtPrecio" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                      <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                      </div>
+                    </div>
+                  </div>
+      
+                </div>         
+                <hr class="my-4">       
+                <button  type="submit" class="w-100 btn btn-success btn-lg">Guardar</button>
+              </form>
+            </div>
+          </div>
     </main>
-      <footer>        
-      </footer>
-    <!-- Vincula jQuery con el index.html -->
+    <footer></footer>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/script-mascota-form.js"></script>
-    <script src="js/script-main.js"></script>
+   <script src="js/form-validation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mascota-form.js"></script>
 </body>
 </html>
